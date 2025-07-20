@@ -1,0 +1,51 @@
+
+.main{
+    display: flex;
+    background-color: rgb(16, 17, 17);
+    height: 100vh;
+    width: 100%;
+    color: grey;
+}
+
+.tag{
+    color: rgba(131, 136, 131, 0.5);
+    font-style: italic;
+    font-size: 1.7m;
+}
+.desg{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin: 10px;
+    margin-left: 5% ;
+    margin-top: 2%px;
+    color: rgba(172, 173, 173,0.3);
+    font-size: 1.5em;
+}
+
+.info{
+    font-family:'Gilroy-bold', sans-serif;
+    font-size: 6em;
+    color: white;
+    margin: 0;
+}
+button{
+    color: seagreen;
+    border: 2px solid seagreen;
+    background: black;
+    height:50px;
+    width:200px;
+    text-decoration: solid;
+    margin-left: 5px;
+}
+
+.content {
+    flex: 1;
+    padding: 100px;
+    
+}
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    height: 100%;
+    position: sticky;
+}
