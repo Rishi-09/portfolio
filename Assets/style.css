@@ -1,25 +1,94 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 .main{
-    display: flex;
+    display:flex;
     background-color: rgb(16, 17, 17);
     height: 100vh;
     width: 100%;
     color: grey;
+    margin: 0;
+    padding: 0;
+}
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    height: 100%;
+    position: sticky;
+}
+
+.logo{
+    margin: 20px auto;
+    text-align: center ;
+    width: 80%;
+    height: 200px;
+    background-color: black;
+    border-radius: 20px;
+    font-size: 1.5em;
+    transition: all 0.3s ease;
+}
+
+.logo-alpha{
+    font-size: 4em;
+    color: white;
+    font-weight: bold;
+    filter: drop-shadow(5px 0px 5px aqua);
+    font-family: 'Gilroy-bold';
+}
+
+
+.logo:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0 5px rgb(230, 107, 35));
+}
+
+.name{
+    font-family: 'Gilroy-bold';
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    filter: drop-shadow(0px 0px 5px rgb(35, 230, 204));
+    margin-top: 20px;
+}
+
+ul{
+    margin:0;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+ul li:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+li{
+    list-style: none;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.nav-buttons{
+    color: white;
+    font-size: 1.1em;
+    border: transparent;
+    background: transparent;
+    text-decoration: solid;
+    transition: all 0.1s ease;
 }
 
 .tag{
     color: rgba(131, 136, 131, 0.5);
     font-style: italic;
-    font-size: 1.7m;
-}
-.desg{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    margin: 10px;
-    margin-left: 5% ;
-    margin-top: 2%px;
-    color: rgba(172, 173, 173,0.3);
-    font-size: 1.5em;
+    font-size: 1.4em;
+    font-family: 'Dancing Script';
 }
 
 .info{
@@ -27,25 +96,55 @@
     font-size: 6em;
     color: white;
     margin: 0;
+    filter: drop-shadow(0px 0px 3px rgb(172, 168, 168));
+    transition: all 0.5s ease;
 }
-button{
-    color: seagreen;
-    border: 2px solid seagreen;
-    background: black;
+
+.first-alpha{
+    filter: drop-shadow(5px 0 5px rgb(230, 107, 35));
+    font-size: 1.5em;
+}
+
+.info:hover{
+    transform: scale(1.07) ;
+    filter: drop-shadow(0px 0px 5px rgb(255, 254, 254));
+}
+
+.desg{
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+    margin-left: 5% ;
+    margin-top: 2%px;
+    color: rgba(172, 173, 173,0.3);
+    font-size: 1.7em;
+    transition: all 0.3s ease;
+}
+
+.desg:hover{
+    color:white;
+    transform: scale(1.1);
+}
+
+.contact-me{
+    color: teal;
+    border: 2px solid teal;
+    background: transparent;
     height:50px;
-    width:200px;
+    width:150px;
     text-decoration: solid;
     margin-left: 5px;
+    transition: all 0.1s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+button:active{
+    transform: scale(1);
 }
 
 .content {
-    flex: 1;
+    justify-self: start;
     padding: 100px;
     
-}
-.sidebar {
-    width: 200px;
-    background-color: #333;
-    height: 100%;
-    position: sticky;
 }
