@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
 body{
-     background-color: rgb(16, 17, 17);
+     background-color: rgb(0, 0, 0);
      margin: 0;
      padding: 0;
 }
@@ -15,50 +14,33 @@ body{
     padding: 0;
 }
 .sidebar {
-    width: 200px;
-    background-color: #333;
+    width: 300px;
+    background-color: #191919;
     height: 120%;
     position: sticky;
 }
 
-.logo{
-    margin: 20px auto;
-    text-align: center ;
-    width: 80%;
-    height: 200px;
-    background-color: black;
-    border-radius: 20px;
-    font-size: 1.5em;
-    transition: all 0.3s ease;
-}
-
-.logo-alpha{
-    font-size: 4em;
-    color: white;
-    font-weight: bold;
-    filter: drop-shadow(5px 0px 5px aqua);
-    font-family: 'Gilroy-bold';
-}
-
-
-.logo:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(0px 0 5px rgb(230, 107, 35));
-}
-
 .name{
-    font-family: 'Gilroy-bold';
-    font-size: 1.5em;
-    color: white;
-    font-weight: bold;
-    filter: drop-shadow(0px 0px 5px rgb(35, 230, 204));
-    margin-top: 20px;
+    background-color: aqua;
+    border-radius: 10px;
 }
+
+.nav-name {
+  font-size: 3em;
+  color: white;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  padding: 70px;
+  
+}
+
+
 
 a{
+    width: 300px;
     text-decoration: none;
-    color: white;
-    padding: 20px;
+    
 }
 
 ul{
@@ -67,66 +49,75 @@ ul{
     text-align: center;
 }
 
-ul li:first-child {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 li{
     list-style: none;
-    padding: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2em;
-    color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-}
-
-li:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    cursor: pointer;
-    
 }
 
 .nav-buttons{
-    color: white;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    font-weight: 900;
     border: transparent;
     background: transparent;
     text-decoration: solid;
     transition: all 0.1s ease;
+    color: white;
+    width: 300px;
+    padding: 20px;
+}
+
+.nav-buttons:hover{
+    color: rgb(7, 190, 196);
+}
+
+.nav-buttons:active{
+    transform: scale(0.95);
 }
 
 .tag{
-    color: rgba(131, 136, 131, 0.5);
-    font-style: italic;
-    font-size: 1.4em;
-    font-family: 'Dancing Script';
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+    margin-left: 5% ;
+    margin-top: 2%px;
+    color: rgba(172, 173, 173,0.3);
+    font-size: 1.7em;
+    transition: all 0.3s ease;
+    
 }
+.inner-tag{
+    padding-left: 50px;
+    
+}
+
+.inner-inner-tag{
+    padding-left: 100px;
+}
+
 
 .info{
     font-family:'Gilroy-bold', sans-serif;
     font-size: 5em;
     color: white;
     margin: 0;
-    filter: drop-shadow(0px 0px 3px rgb(172, 168, 168));
+    filter: drop-shadow(4px 0px  rgb(54, 200, 208));
     transition: all 0.5s ease;
 }
 
-.first-alpha{
-    filter: drop-shadow(5px 0 5px rgb(230, 107, 35));
-    font-size: 1.5em;
-}
+
 
 .info:hover{
     transform: scale(1.07) ;
-    filter: drop-shadow(0px 0px 5px rgb(255, 254, 254));
+    filter: drop-shadow(0px 0px 5px rgb(85, 185, 218));
+}
+
+.first-alpha{
+    filter: drop-shadow(7px 0px 0px rgb(89, 218, 218));
+    font-size: 1.5em;   
 }
 
 .desg{
     font-family: 'Poppins', sans-serif;
     margin: 10px;
-    margin-left: 5% ;
-    margin-top: 2%px;
+    margin-top: 2%;
     color: rgba(172, 173, 173,0.3);
     font-size: 1.7em;
     transition: all 0.3s ease;
@@ -137,28 +128,48 @@ li:hover {
     transform: scale(1.1);
 }
 
-.contact-me{
-    position: relative;
-    color: teal;
-    border: 2px solid teal;
+#button:hover{
+    color: aqua;
+    border: 2px solid aqua;
+}
+
+#button:active{
+    transform: scale(0.95);
+}
+
+
+#button{
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
     background: transparent;
     height:50px;
     width:150px;
-    text-decoration: solid;
-    margin-left: 5px;
     transition: all 0.1s ease;
+    padding: 10px;
+    border-radius: 5px;
 }
-
-
-button:hover{
-    transform: scale(1.1);
-}
-button:active{
-    transform: scale(1);
-}
-
-.content {
-    justify-self: start;
+.content{
     padding: 100px;
-    
 }
+
+
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-5px, 10px);
+  }
+  50% {
+    transform: translate(10px, -5px);
+  }
+  75% {
+    transform: translate(-10px, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
