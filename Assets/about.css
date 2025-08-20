@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body{
+     background-color: rgb(0, 0, 0);
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     font-family: 'poppins';
+     overflow: hidden   ;
+}
+
+.main{
+    display:flex;
+    height: 100vh;
+    width: 100%;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #191919;
+    height: 100%;
+    position: sticky;
+}
+
+.name{
+    background-color: aqua;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.5s ease-in;
+}
+
+.nav-name {
+  font-size: 3em;
+  color: white;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  padding: 70px;
+  
+}
+
+.name:hover{
+    background-color: rgb(137, 225, 225);
+    border-radius: 10px;
+    width: 300px;
+}
+
+.name:active{
+    background-color: aqua;
+    transform: translateX(10px);
+}
+
+a{
+    width: 300px;
+    text-decoration: none;
+    
+}
+
+ul{
+    margin:0;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+.nav-buttons{
+    font-size: 1.2em;
+    font-weight: 900;
+    border: transparent;
+    background: transparent;
+    text-decoration: solid;
+    transition: all 0.1s ease;
+    color: white;
+    width: 300px;
+    padding: 20px;
+}
+
+.nav-buttons:hover{
+    color: rgb(7, 190, 196);
+}
+
+.nav-buttons:active{
+    transform: scale(0.95);
+}
+.first-alpha{
+    filter: drop-shadow(7px 0px 0px rgb(89, 218, 218));
+    font-size: 1.5em;   
+}
+h1{
+    padding: 100px;
+    color: white;
+}
