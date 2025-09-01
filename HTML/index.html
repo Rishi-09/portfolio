@@ -10,19 +10,18 @@
   <body>
     <div class="main">
       <div class="sidebar">
-        <button class="name  ">
+        <button class="name">
           <span class="nav-name"><span class="first-alpha">R</span> ishi</span>
         </button>
         <div class="navbar">
           <ul>
-            <li><button class="nav-buttons">About</button></li>
-            <li><button class="nav-buttons">My Skills</button></li>
-            <li><button class="nav-buttons">Blog</button></li>
-            <li><button class="nav-buttons">Work</button></li>
-            <li><button class="nav-buttons">Contact</button></li>
+            <li><button class="nav-buttons" onclick="scrollToSection('skills')">My Skills</button></li>
+            <li><button class="nav-buttons" onclick="scrollToSection('work')">Projects</button></li>
+            <li><button class="nav-buttons" onclick="scrollToSection('contact')">Contact</button></li>
           </ul>
         </div>
       </div>
+
       <div class="content">
         <p class="tag">&ltbody&gt</p>
         <p class="tag inner-tag">&lt/hl&gt</p>
@@ -30,18 +29,43 @@
         <h1 class="info">I am <span class="first-alpha">R</span> ishi</h1>
         <h1 class="info">Web Developer</h1>
         <p class="tag inner-tag">&lt/hl&gt</p>
-        <p class="desg inner-inner-tag">
-          Front End Developer / WordPress Expert
-        </p>
+        <p class="desg inner-inner-tag">Front End Developer / WordPress Expert</p>
         <p class="tag tag">&ltbody&gt</p>
-
         <button class="contact-me" id="button">Contact Me!</button>
+      </div>
+      <div >
+        <img src="/Assets/pfp.jpeg" alt="" class="image">
+
       </div>
       <div class="wall">
         <div class="fresh-line"></div>
-        <div class="aqua-line"></div> 
+        <div class="aqua-line"></div>
       </div>
     </div>
-    <script src="/script.js"></script>
+    <script>
+    document.body.addEventListener("click", function(e) {
+      const bubblesCount = 15; // number of bubbles
+      for (let i = 0; i < bubblesCount; i++) {
+        const bubble = document.createElement("span");
+        bubble.classList.add("bubble");
+
+        // random scatter direction
+        const angle = Math.random() * 2 * Math.PI;
+        const distance = 80 + Math.random() * 60; // how far bubbles scatter
+        const x = Math.cos(angle) * distance + "px";
+        const y = Math.sin(angle) * distance + "px";
+
+        bubble.style.left = `${e.clientX}px`;
+        bubble.style.top = `${e.clientY}px`;
+        bubble.style.setProperty("--x", x);
+        bubble.style.setProperty("--y", y);
+
+        document.body.appendChild(bubble);
+
+        // remove bubble after animation
+        setTimeout(() => bubble.remove(), 1000);
+      }
+    });
+  </script>
   </body>
 </html>
