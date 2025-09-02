@@ -41,31 +41,6 @@
         <div class="fresh-line"></div>
         <div class="aqua-line"></div>
       </div>
-    </div>
-    <script>
-    document.body.addEventListener("click", function(e) {
-      const bubblesCount = 15; // number of bubbles
-      for (let i = 0; i < bubblesCount; i++) {
-        const bubble = document.createElement("span");
-        bubble.classList.add("bubble");
-
-        // random scatter direction
-        const angle = Math.random() * 2 * Math.PI;
-        const distance = 80 + Math.random() * 60; // how far bubbles scatter
-        const x = Math.cos(angle) * distance + "px";
-        const y = Math.sin(angle) * distance + "px";
-
-        bubble.style.left = `${e.clientX}px`;
-        bubble.style.top = `${e.clientY}px`;
-        bubble.style.setProperty("--x", x);
-        bubble.style.setProperty("--y", y);
-
-        document.body.appendChild(bubble);
-
-        // remove bubble after animation
-        setTimeout(() => bubble.remove(), 1000);
-      }
-    });
-  </script>
+    </div>
   </body>
 </html>
