@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="/Assets/style.css" />
   </head>
   <body>
-    <div class="main">
-      <div class="sidebar">
-        <button class="name">
-          <span class="nav-name"><span class="first-alpha">R</span> ishi</span>
-        </button>
-        <div class="navbar">
-          <ul>
-            <li><button class="nav-buttons" onclick="scrollToSection('skills')">My Skills</button></li>
-            <li><button class="nav-buttons" onclick="scrollToSection('work')">Projects</button></li>
-            <li><button class="nav-buttons" onclick="scrollToSection('contact')">Contact</button></li>
-          </ul>
-        </div>
+    <div class="sidebar">
+      <button class="name">
+        <span class="nav-name"><span class="first-alpha">R</span> ishi</span>
+      </button>
+      <div class="navbar">
+        <ul>
+          <li><button class="nav-buttons" onclick="scrollToSection('home')">Home</button></li>
+          <li><button class="nav-buttons" onclick="scrollToSection('skills')">My Skills</button></li>
+          <li><button class="nav-buttons" onclick="scrollToSection('projects')">Projects</button></li>
+          <li><button class="nav-buttons" onclick="scrollToSection('contact')">Contact</button></li>
+        </ul>
       </div>
+    </div>
 
+    <!-- Home Section -->
+    <section id="home" class="main-section">
       <div class="content">
         <p class="tag">&ltbody&gt</p>
         <p class="tag inner-tag">&lt/hl&gt</p>
@@ -31,41 +33,86 @@
         <p class="tag inner-tag">&lt/hl&gt</p>
         <p class="desg inner-inner-tag">Front End Developer / WordPress Expert</p>
         <p class="tag tag">&ltbody&gt</p>
-        <button class="contact-me" id="button">Contact Me!</button>
+        <button class="contact-me" id="button" onclick="scrollToSection('contact')">Contact Me!</button>
       </div>
-      <div >
-        <img src="/Assets/pfp.jpeg" alt="" class="image">
-
+      <div>
+        <img src="/Assets/pfp.jpeg" alt="Profile" class="image">
       </div>
       <div class="wall">
         <div class="fresh-line"></div>
         <div class="aqua-line"></div>
       </div>
-    </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="main-section skills">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React</div>
+        <div class="skill-card">WordPress</div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="main-section projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>A glowing responsive website built with HTML, CSS, and JS.</p>
+        </div>
+        <div class="project-card">
+          <h3>E-commerce Store</h3>
+          <p>Custom WordPress store with integrated payment system.</p>
+        </div>
+        <div class="project-card">
+          <h3>React Dashboard</h3>
+          <p>Interactive analytics dashboard built with React.js.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="main-section contact">
+      <h2 class="section-title">Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" id="button">Send</button>
+      </form>
+    </section>
+
     <script>
-    document.body.addEventListener("click", function(e) {
-      const bubblesCount = 15; // number of bubbles
-      for (let i = 0; i < bubblesCount; i++) {
-        const bubble = document.createElement("span");
-        bubble.classList.add("bubble");
-
-        // random scatter direction
-        const angle = Math.random() * 2 * Math.PI;
-        const distance = 80 + Math.random() * 60; // how far bubbles scatter
-        const x = Math.cos(angle) * distance + "px";
-        const y = Math.sin(angle) * distance + "px";
-
-        bubble.style.left = `${e.clientX}px`;
-        bubble.style.top = `${e.clientY}px`;
-        bubble.style.setProperty("--x", x);
-        bubble.style.setProperty("--y", y);
-
-        document.body.appendChild(bubble);
-
-        // remove bubble after animation
-        setTimeout(() => bubble.remove(), 1000);
+      // smooth scroll function
+      function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
       }
-    });
-  </script>
+
+      // bubble effect
+      document.body.addEventListener("click", function(e) {
+        const bubblesCount = 15;
+        for (let i = 0; i < bubblesCount; i++) {
+          const bubble = document.createElement("span");
+          bubble.classList.add("bubble");
+
+          const angle = Math.random() * 2 * Math.PI;
+          const distance = 80 + Math.random() * 60;
+          const x = Math.cos(angle) * distance + "px";
+          const y = Math.sin(angle) * distance + "px";
+
+          bubble.style.left = `${e.clientX}px`;
+          bubble.style.top = `${e.clientY}px`;
+          bubble.style.setProperty("--x", x);
+          bubble.style.setProperty("--y", y);
+
+          document.body.appendChild(bubble);
+          setTimeout(() => bubble.remove(), 1000);
+        }
+      });
+    </script>
   </body>
 </html>
