@@ -184,7 +184,7 @@ li{
     width:50px;
     background-color: aqua;
     margin: 20px;
-    transform: rotate(-45deg) translateX(400px);
+    transform: rotate(-45deg)        translateX(400px);
 }
  .fresh-line{
     height: 100%;
@@ -211,6 +211,7 @@ li{
         transform: translateY(0);
       }
     }
+<<<<<<< HEAD
    
 
 
@@ -382,3 +383,6 @@ li{
     opacity: 0;
   }
 }
+=======
+   
+>>>>>>> c5852409bc7f4c4530d0855948c60274077d6c1b
