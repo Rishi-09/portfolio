@@ -5,18 +5,21 @@ body{
      padding: 0;
 }
 
-.main{
-    display:flex;
-    height: 100vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
+
 .sidebar {
-    width: 300px;
-    background-color: #191919;
-    height: 100%;
-    position: sticky;
+  position: fixed;       /* makes it stay in place */
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);  /* slight transparency */
+  backdrop-filter: blur(10px);       /* glass effect */
+  z-index: 1000;                     /* always on top */
+  /* display: flex; */
+  justify-content: center;
+  padding: 15px 30px;
+  border-bottom: 2px solid aqua;
+  box-shadow: 0 2px 10px rgba(0, 255, 255, 0.3);
 }
 
 .name{
@@ -142,7 +145,6 @@ li{
     transform: scale(0.95);
 }
 
-
 #button{
     color: rgb(0, 0, 0);
     border: none;
@@ -228,3 +230,155 @@ li{
         opacity: 0;
       }
     }
+
+
+    /* === Skills Section Cards === */
+.skill-card {
+  background: #191919;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 15px 25px;
+  border-radius: 12px;
+  border: 2px solid aqua;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.skill-card:hover {
+  background: aqua;
+  color: #191919;
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+/* === Project Cards === */
+.project-card {
+  background: #191919;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid salmon;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(250, 128, 114, 0.2);
+}
+
+.project-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.4em;
+  color: salmon;
+}
+
+.project-card p {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 20px rgba(250, 128, 114, 0.6);
+}
+
+/* === Contact Form === */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid aqua;
+  border-radius: 10px;
+  background: #111;
+  color: white;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: salmon;
+  box-shadow: 0 0 10px rgba(250, 128, 114, 0.6);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Contact form button inherits your #button style */
+.contact-form button {
+  align-self: flex-start;
+}
+
+/* === Section Spacing === */
+
+/* === Section Wrapper === */
+.main-section {
+  min-height: 100vh;
+  padding: 120px 60px;
+  margin-left: 15%;   /* keep space for sidebar */
+  width: 85%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 0 0 10px aqua;
+}
+
+/* === Skills Grid === */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* === Projects Grid === */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* === Contact Section Alignment === */
+.contact {
+  align-items: center;
+  text-align: center;
+}
+
+.click-bubble {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: pop 1s ease-out forwards;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes pop {
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
