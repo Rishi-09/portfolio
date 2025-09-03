@@ -208,30 +208,27 @@ li{
   width: 85%;
   margin-left: 15%;
 }
-.skill-head{
+.section-title{
   color: white;
   font-family: 'Poppins';
   text-align: center;
   font-size: 3em;
   font-family:'Gilroy-bold', sans-serif;
   margin: 0;
-  filter: drop-shadow(6px 0px   rgb(54, 200, 208));
+  filter: drop-shadow(4px 0px   rgb(54, 200, 208));
   transition: all 0.5s ease;
   text-align: center;
   margin: 10px;
-  animation: float 3s ease-in-out infinite;
+  animation: float 2.5s ease-in-out infinite;
 
 }
 
 .skill-cards{
-  margin-left: auto;
-  width: 80vw;
-  height: 80vh;
-  background:transparent;
-  border-radius: 20px;
-  animation: float 3.5s ease-in-out infinite;
   display: flex;
-  flex-wrap: wrap   ;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  animation: float 3s ease-in-out infinite;
 }
 
 .skill-card{
@@ -256,33 +253,7 @@ li{
 .skill-card:hover{
   transform: scale(1.05);
 }
-/* === Project Cards === */
-.project-card {
-  background: #191919;
-  padding: 20px;
-  border-radius: 15px;
-  border: 2px solid salmon;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(250, 128, 114, 0.2);
-}
 
-.project-card h3 {
-  margin: 0 0 10px;
-  font-size: 1.4em;
-  color: salmon;
-}
-
-.project-card p {
-  font-size: 1em;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.project-card:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 0 20px rgba(250, 128, 114, 0.6);
-}
 
 /* === Contact Form === */
 .contact-form {
@@ -322,7 +293,6 @@ li{
   align-self: flex-start;
 }
 
-/* === Section Spacing === */
 
 /* === Section Wrapper === */
 .main-section {
@@ -336,52 +306,18 @@ li{
   justify-content: center;
 }
 
-/* Section Titles */
-.section-title {
-  font-size: 3em;
-  color: white;
-  text-align: center;
-  margin-bottom: 50px;
-  font-family: 'Poppins', sans-serif;
-  text-shadow: 0 0 10px aqua;
-}
-
-/* === Skills Grid === */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-  justify-items: center;
-}
-
-/* === Projects Grid === */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
 
 /* === Contact Section Alignment === */
 .contact {
   align-items: center;
-  text-align: center;
+  text-align: center; 
+  animation: float 3.5s ease-in-out  infinite ;
 }
 
-.click-bubble {
+
+.icon{
+  transform: scale(1.8);
   position: absolute;
-  width: 100px;
-  height: 100px;
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
-  transform: scale(0);
-  animation: pop 1s ease-out forwards;
-  pointer-events: none;
-  z-index: 9999;
-}
-
-@keyframes pop {
-  to {
-    transform: scale(3);
-    opacity: 0;
-  }
+  bottom: 10px;
+  right: 10px;
 }
