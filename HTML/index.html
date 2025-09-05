@@ -14,10 +14,32 @@
       </button>
       <div class="navbar">
         <ul>
-          <li><button class="nav-buttons" onclick="scrollToSection('home')">Home</button></li>
-          <li><button class="nav-buttons" onclick="scrollToSection('skill-section')">My Skills</button></li>
-          <li><button class="nav-buttons" onclick="scrollToSection('project-section')">Projects</button></li>
-          <li><button class="nav-buttons" onclick="scrollToSection('contact')">Contact</button></li>
+          <li>
+            <button class="nav-buttons" onclick="scrollToSection('home')">
+              Home
+            </button>
+          </li>
+          <li>
+            <button
+              class="nav-buttons"
+              onclick="scrollToSection('skill-section')"
+            >
+              My Skills
+            </button>
+          </li>
+          <li>
+            <button
+              class="nav-buttons"
+              onclick="scrollToSection('project-section')"
+            >
+              Projects
+            </button>
+          </li>
+          <li>
+            <button class="nav-buttons" onclick="scrollToSection('contact')">
+              Contact
+            </button>
+          </li>
         </ul>
       </div>
     </div>
@@ -31,31 +53,97 @@
         <h1 class="info">I am <span class="first-alpha">R</span> ishi</h1>
         <h1 class="info">Web Developer</h1>
         <p class="tag inner-tag">&lt/hl&gt</p>
-        <p class="desg inner-inner-tag">Front End Developer / WordPress Expert</p>
+        <p class="desg inner-inner-tag">
+          Front End Developer / WordPress Expert
+        </p>
         <p class="tag tag">&ltbody&gt</p>
-        <button class="contact-me" id="button" onclick="scrollToSection('contact')">Contact Me!</button>
+        <button
+          class="contact-me"
+          id="button"
+          onclick="scrollToSection('contact')"
+        >
+          Contact Me!
+        </button>
       </div>
       <div>
-        <img src="/Assets/pfp.jpeg" alt="Profile" class="image">
+        <img src="/Assets/pfp.jpeg" alt="Profile" class="image" />
       </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skill-section"  class="skill main-section" >
-      <h1 class="section-title" >My Skills</h1>
+    <section id="skill-section" class="skill main-section">
+      <h1 class="section-title">My Skills</h1>
       <div class="cards">
-        <div class="card">HTML <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.mozilla.org/en-US/docs/Web/HTML&ved=2ahUKEwj1zviRpLyPAxXnTGwGHYL3B9cQFnoECBgQAQ&usg=AOvVaw23zU8Os1zIEwrE-SW_k5x4" target="main" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAABcklEQVRIS2NkoCFgpKHZDANmuDzQV4pE+Ow+UM1DbOqwuVwUqHAFEBsC8WUg/o/HApB+fSA+BcQRQPwOWS02w/cAFVwH4iIg/k2Ey1mBaqYCsRgQB+AznA8oeQ+q8B8RBsOUsAEZr4FYHIh/wATRXa4BlFgExGYkGAxTehrIiAHim7gM1wZKLABiUzINTwDqu0qK4d5YLJsNFHuK5gCQy/EaDgo7ByDehaQxHciegWZQJhaxk1DDQYkBDIjNRElAtSDXMkH1YTOcoMtxBbURUGI3EAtR23BjoIFboV6WAtJzgZgqLge5eCMQxwHxfqir44H0NSAGBQMyIClYQAavA+JgID6LK7yQxEGGxwLxDZgYrgiVACo4DMRBQAwqXwgBFqCCF0AsCcTwIgNfauEGKvxKyFSgPKxseQtkVyKrJzYpIusBZapSqABIvxIQTwbiHiBGKY/IMZwfaAioOAYBUHEMKm6/Y/MhOYYTEVIQJUPXcABMvkMYz0UNSQAAAABJRU5ErkJggg==" alt="" class="icon" ></a> </div>
-        <div class="card">CSS/Tailwind<a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://tailwindcss.com/docs&ved=2ahUKEwjZovSfpLyPAxWId2wGHQbADRsQFnoECB4QAQ&usg=AOvVaw2BxsHvnrho2q_24JJZ3a00" target="main" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAABcklEQVRIS2NkoCFgpKHZDANmuDzQV4pE+Ow+UM1DbOqwuVwUqHAFEBsC8WUg/o/HApB+fSA+BcQRQPwOWS02w/cAFVwH4iIg/k2Ey1mBaqYCsRgQB+AznA8oeQ+q8B8RBsOUsAEZr4FYHIh/wATRXa4BlFgExGYkGAxTehrIiAHim7gM1wZKLABiUzINTwDqu0qK4d5YLJsNFHuK5gCQy/EaDgo7ByDehaQxHciegWZQJhaxk1DDQYkBDIjNRElAtSDXMkH1YTOcoMtxBbURUGI3EAtR23BjoIFboV6WAtJzgZgqLge5eCMQxwHxfqir44H0NSAGBQMyIClYQAavA+JgID6LK7yQxEGGxwLxDZgYrgiVACo4DMRBQAwqXwgBFqCCF0AsCcTwIgNfauEGKvxKyFSgPKxseQtkVyKrJzYpIusBZapSqABIvxIQTwbiHiBGKY/IMZwfaAioOAYBUHEMKm6/Y/MhOYYTEVIQJUPXcABMvkMYz0UNSQAAAABJRU5ErkJggg==" alt="" class="icon" ></a> </div>
-        <div class="card">JS<a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.mozilla.org/en-US/docs/Web/JavaScript&ved=2ahUKEwipnr6npLyPAxWYXGwGHT0EEkYQFnoECBUQAQ&usg=AOvVaw1Il_CfTbNi4CXc-0nBN5rP" target="main" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAABcklEQVRIS2NkoCFgpKHZDANmuDzQV4pE+Ow+UM1DbOqwuVwUqHAFEBsC8WUg/o/HApB+fSA+BcQRQPwOWS02w/cAFVwH4iIg/k2Ey1mBaqYCsRgQB+AznA8oeQ+q8B8RBsOUsAEZr4FYHIh/wATRXa4BlFgExGYkGAxTehrIiAHim7gM1wZKLABiUzINTwDqu0qK4d5YLJsNFHuK5gCQy/EaDgo7ByDehaQxHciegWZQJhaxk1DDQYkBDIjNRElAtSDXMkH1YTOcoMtxBbURUGI3EAtR23BjoIFboV6WAtJzgZgqLge5eCMQxwHxfqir44H0NSAGBQMyIClYQAavA+JgID6LK7yQxEGGxwLxDZgYrgiVACo4DMRBQAwqXwgBFqCCF0AsCcTwIgNfauEGKvxKyFSgPKxseQtkVyKrJzYpIusBZapSqABIvxIQTwbiHiBGKY/IMZwfaAioOAYBUHEMKm6/Y/MhOYYTEVIQJUPXcABMvkMYz0UNSQAAAABJRU5ErkJggg==" alt="" class="icon" ></a> </div>
-        <div class="card">MySQL <a href="https://dev.mysql.com/doc/" target="main" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAABcklEQVRIS2NkoCFgpKHZDANmuDzQV4pE+Ow+UM1DbOqwuVwUqHAFEBsC8WUg/o/HApB+fSA+BcQRQPwOWS02w/cAFVwH4iIg/k2Ey1mBaqYCsRgQB+AznA8oeQ+q8B8RBsOUsAEZr4FYHIh/wATRXa4BlFgExGYkGAxTehrIiAHim7gM1wZKLABiUzINTwDqu0qK4d5YLJsNFHuK5gCQy/EaDgo7ByDehaQxHciegWZQJhaxk1DDQYkBDIjNRElAtSDXMkH1YTOcoMtxBbURUGI3EAtR23BjoIFboV6WAtJzgZgqLge5eCMQxwHxfqir44H0NSAGBQMyIClYQAavA+JgID6LK7yQxEGGxwLxDZgYrgiVACo4DMRBQAwqXwgBFqCCF0AsCcTwIgNfauEGKvxKyFSgPKxseQtkVyKrJzYpIusBZapSqABIvxIQTwbiHiBGKY/IMZwfaAioOAYBUHEMKm6/Y/MhOYYTEVIQJUPXcABMvkMYz0UNSQAAAABJRU5ErkJggg==" alt="" class="icon" ></a> </div>
-        <div class="card">Express<a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://expressjs.com/&ved=2ahUKEwie9KaupLyPAxVaamwGHTUMMe8QFnoECCQQAQ&usg=AOvVaw2dzc6U9bu173R4s1d9BYhT" target="main" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAABcklEQVRIS2NkoCFgpKHZDANmuDzQV4pE+Ow+UM1DbOqwuVwUqHAFEBsC8WUg/o/HApB+fSA+BcQRQPwOWS02w/cAFVwH4iIg/k2Ey1mBaqYCsRgQB+AznA8oeQ+q8B8RBsOUsAEZr4FYHIh/wATRXa4BlFgExGYkGAxTehrIiAHim7gM1wZKLABiUzINTwDqu0qK4d5YLJsNFHuK5gCQy/EaDgo7ByDehaQxHciegWZQJhaxk1DDQYkBDIjNRElAtSDXMkH1YTOcoMtxBbURUGI3EAtR23BjoIFboV6WAtJzgZgqLge5eCMQxwHxfqir44H0NSAGBQMyIClYQAavA+JgID6LK7yQxEGGxwLxDZgYrgiVACo4DMRBQAwqXwgBFqCCF0AsCcTwIgNfauEGKvxKyFSgPKxseQtkVyKrJzYpIusBZapSqABIvxIQTwbiHiBGKY/IMZwfaAioOAYBUHEMKm6/Y/MhOYYTEVIQJUPXcABMvkMYz0UNSQAAAABJRU5ErkJggg==" alt="" class="icon" ></a> </div>
-        <div class="card">Mongodb<a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mongodb.com/docs/&ved=2ahUKEwjwpdy3pLyPAxUySmwGHRFnALsQFnoECAwQAQ&usg=AOvVaw2PGmD13E_0epdOJM09UX6p" target="main" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAABcklEQVRIS2NkoCFgpKHZDANmuDzQV4pE+Ow+UM1DbOqwuVwUqHAFEBsC8WUg/o/HApB+fSA+BcQRQPwOWS02w/cAFVwH4iIg/k2Ey1mBaqYCsRgQB+AznA8oeQ+q8B8RBsOUsAEZr4FYHIh/wATRXa4BlFgExGYkGAxTehrIiAHim7gM1wZKLABiUzINTwDqu0qK4d5YLJsNFHuK5gCQy/EaDgo7ByDehaQxHciegWZQJhaxk1DDQYkBDIjNRElAtSDXMkH1YTOcoMtxBbURUGI3EAtR23BjoIFboV6WAtJzgZgqLge5eCMQxwHxfqir44H0NSAGBQMyIClYQAavA+JgID6LK7yQxEGGxwLxDZgYrgiVACo4DMRBQAwqXwgBFqCCF0AsCcTwIgNfauEGKvxKyFSgPKxseQtkVyKrJzYpIusBZapSqABIvxIQTwbiHiBGKY/IMZwfaAioOAYBUHEMKm6/Y/MhOYYTEVIQJUPXcABMvkMYz0UNSQAAAABJRU5ErkJggg==" alt="" class="icon" ></a> </div>
-
+        <div class="card">
+          <svg class="skill-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              fill="#ffffff"
+              d="M128 96L162.9 491.8L319.5 544L477.1 491.8L512 96L128 96zM436.2 223.9L252.4 223.9L256.5 273.3L432.1 273.3L418.5 421.7L320.6 448.7L320.6 449L319.5 449L220.8 421.7L214.8 345.9L262.5 345.9L266 384L319.5 398.5L373.2 384L379.2 321.8L212.3 321.8L199.5 176.2L440.6 176.2L436.2 223.9z"
+            /></svg
+          ><a
+            href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.mozilla.org/en-US/docs/Web/HTML&ved=2ahUKEwj1zviRpLyPAxXnTGwGHYL3B9cQFnoECBgQAQ&usg=AOvVaw23zU8Os1zIEwrE-SW_k5x4"
+            target="main"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAABcklEQVRIS2NkoCFgpKHZDANmuDzQV4pE+Ow+UM1DbOqwuVwUqHAFEBsC8WUg/o/HApB+fSA+BcQRQPwOWS02w/cAFVwH4iIg/k2Ey1mBaqYCsRgQB+AznA8oeQ+q8B8RBsOUsAEZr4FYHIh/wATRXa4BlFgExGYkGAxTehrIiAHim7gM1wZKLABiUzINTwDqu0qK4d5YLJsNFHuK5gCQy/EaDgo7ByDehaQxHciegWZQJhaxk1DDQYkBDIjNRElAtSDXMkH1YTOcoMtxBbURUGI3EAtR23BjoIFboV6WAtJzgZgqLge5eCMQxwHxfqir44H0NSAGBQMyIClYQAavA+JgID6LK7yQxEGGxwLxDZgYrgiVACo4DMRBQAwqXwgBFqCCF0AsCcTwIgNfauEGKvxKyFSgPKxseQtkVyKrJzYpIusBZapSqABIvxIQTwbiHiBGKY/IMZwfaAioOAYBUHEMKm6/Y/MhOYYTEVIQJUPXcABMvkMYz0UNSQAAAABJRU5ErkJggg=="
+              alt=""
+              class="icon"
+          /></a>
+        </div>
+        <div class="card">
+          <svg class="skill-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M128 96L162.9 491.8L320 544L477.1 491.8L512 96L128 96zM441.1 176L436.3 223.3L321 272.6L320.7 272.7L432.2 272.7L419.4 419.3L321.2 448L222.4 418.8L216 344.9L264.9 344.9L268.1 383.2L320.7 396.5L375.4 381.1L379.1 319.5L212.8 319L212.8 318.9L212.6 319L209 272.7L321.1 226L327.6 223.3L204.7 223.3L198.9 176L441.1 176z"/></svg><a
+            href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://tailwindcss.com/docs&ved=2ahUKEwjZovSfpLyPAxWId2wGHQbADRsQFnoECB4QAQ&usg=AOvVaw2BxsHvnrho2q_24JJZ3a00"
+            target="main"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAABcklEQVRIS2NkoCFgpKHZDANmuDzQV4pE+Ow+UM1DbOqwuVwUqHAFEBsC8WUg/o/HApB+fSA+BcQRQPwOWS02w/cAFVwH4iIg/k2Ey1mBaqYCsRgQB+AznA8oeQ+q8B8RBsOUsAEZr4FYHIh/wATRXa4BlFgExGYkGAxTehrIiAHim7gM1wZKLABiUzINTwDqu0qK4d5YLJsNFHuK5gCQy/EaDgo7ByDehaQxHciegWZQJhaxk1DDQYkBDIjNRElAtSDXMkH1YTOcoMtxBbURUGI3EAtR23BjoIFboV6WAtJzgZgqLge5eCMQxwHxfqir44H0NSAGBQMyIClYQAavA+JgID6LK7yQxEGGxwLxDZgYrgiVACo4DMRBQAwqXwgBFqCCF0AsCcTwIgNfauEGKvxKyFSgPKxseQtkVyKrJzYpIusBZapSqABIvxIQTwbiHiBGKY/IMZwfaAioOAYBUHEMKm6/Y/MhOYYTEVIQJUPXcABMvkMYz0UNSQAAAABJRU5ErkJggg=="
+              alt=""
+              class="icon"
+          /></a>
+        </div>
+        <div class="card">
+          JS<a
+            href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.mozilla.org/en-US/docs/Web/JavaScript&ved=2ahUKEwipnr6npLyPAxWYXGwGHT0EEkYQFnoECBUQAQ&usg=AOvVaw1Il_CfTbNi4CXc-0nBN5rP"
+            target="main"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAABcklEQVRIS2NkoCFgpKHZDANmuDzQV4pE+Ow+UM1DbOqwuVwUqHAFEBsC8WUg/o/HApB+fSA+BcQRQPwOWS02w/cAFVwH4iIg/k2Ey1mBaqYCsRgQB+AznA8oeQ+q8B8RBsOUsAEZr4FYHIh/wATRXa4BlFgExGYkGAxTehrIiAHim7gM1wZKLABiUzINTwDqu0qK4d5YLJsNFHuK5gCQy/EaDgo7ByDehaQxHciegWZQJhaxk1DDQYkBDIjNRElAtSDXMkH1YTOcoMtxBbURUGI3EAtR23BjoIFboV6WAtJzgZgqLge5eCMQxwHxfqir44H0NSAGBQMyIClYQAavA+JgID6LK7yQxEGGxwLxDZgYrgiVACo4DMRBQAwqXwgBFqCCF0AsCcTwIgNfauEGKvxKyFSgPKxseQtkVyKrJzYpIusBZapSqABIvxIQTwbiHiBGKY/IMZwfaAioOAYBUHEMKm6/Y/MhOYYTEVIQJUPXcABMvkMYz0UNSQAAAABJRU5ErkJggg=="
+              alt=""
+              class="icon"
+          /></a>
+        </div>
+        <div class="card">
+          MySQL
+          <a href="https://dev.mysql.com/doc/" target="main"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAABcklEQVRIS2NkoCFgpKHZDANmuDzQV4pE+Ow+UM1DbOqwuVwUqHAFEBsC8WUg/o/HApB+fSA+BcQRQPwOWS02w/cAFVwH4iIg/k2Ey1mBaqYCsRgQB+AznA8oeQ+q8B8RBsOUsAEZr4FYHIh/wATRXa4BlFgExGYkGAxTehrIiAHim7gM1wZKLABiUzINTwDqu0qK4d5YLJsNFHuK5gCQy/EaDgo7ByDehaQxHciegWZQJhaxk1DDQYkBDIjNRElAtSDXMkH1YTOcoMtxBbURUGI3EAtR23BjoIFboV6WAtJzgZgqLge5eCMQxwHxfqir44H0NSAGBQMyIClYQAavA+JgID6LK7yQxEGGxwLxDZgYrgiVACo4DMRBQAwqXwgBFqCCF0AsCcTwIgNfauEGKvxKyFSgPKxseQtkVyKrJzYpIusBZapSqABIvxIQTwbiHiBGKY/IMZwfaAioOAYBUHEMKm6/Y/MhOYYTEVIQJUPXcABMvkMYz0UNSQAAAABJRU5ErkJggg=="
+              alt=""
+              class="icon"
+          /></a>
+        </div>
+        <div class="card">
+          Express<a
+            href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://expressjs.com/&ved=2ahUKEwie9KaupLyPAxVaamwGHTUMMe8QFnoECCQQAQ&usg=AOvVaw2dzc6U9bu173R4s1d9BYhT"
+            target="main"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAABcklEQVRIS2NkoCFgpKHZDANmuDzQV4pE+Ow+UM1DbOqwuVwUqHAFEBsC8WUg/o/HApB+fSA+BcQRQPwOWS02w/cAFVwH4iIg/k2Ey1mBaqYCsRgQB+AznA8oeQ+q8B8RBsOUsAEZr4FYHIh/wATRXa4BlFgExGYkGAxTehrIiAHim7gM1wZKLABiUzINTwDqu0qK4d5YLJsNFHuK5gCQy/EaDgo7ByDehaQxHciegWZQJhaxk1DDQYkBDIjNRElAtSDXMkH1YTOcoMtxBbURUGI3EAtR23BjoIFboV6WAtJzgZgqLge5eCMQxwHxfqir44H0NSAGBQMyIClYQAavA+JgID6LK7yQxEGGxwLxDZgYrgiVACo4DMRBQAwqXwgBFqCCF0AsCcTwIgNfauEGKvxKyFSgPKxseQtkVyKrJzYpIusBZapSqABIvxIQTwbiHiBGKY/IMZwfaAioOAYBUHEMKm6/Y/MhOYYTEVIQJUPXcABMvkMYz0UNSQAAAABJRU5ErkJggg=="
+              alt=""
+              class="icon"
+          /></a>
+        </div>
+        <div class="card">
+          Mongodb<a
+            href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mongodb.com/docs/&ved=2ahUKEwjwpdy3pLyPAxUySmwGHRFnALsQFnoECAwQAQ&usg=AOvVaw2PGmD13E_0epdOJM09UX6p"
+            target="main"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAABcklEQVRIS2NkoCFgpKHZDANmuDzQV4pE+Ow+UM1DbOqwuVwUqHAFEBsC8WUg/o/HApB+fSA+BcQRQPwOWS02w/cAFVwH4iIg/k2Ey1mBaqYCsRgQB+AznA8oeQ+q8B8RBsOUsAEZr4FYHIh/wATRXa4BlFgExGYkGAxTehrIiAHim7gM1wZKLABiUzINTwDqu0qK4d5YLJsNFHuK5gCQy/EaDgo7ByDehaQxHciegWZQJhaxk1DDQYkBDIjNRElAtSDXMkH1YTOcoMtxBbURUGI3EAtR23BjoIFboV6WAtJzgZgqLge5eCMQxwHxfqir44H0NSAGBQMyIClYQAavA+JgID6LK7yQxEGGxwLxDZgYrgiVACo4DMRBQAwqXwgBFqCCF0AsCcTwIgNfauEGKvxKyFSgPKxseQtkVyKrJzYpIusBZapSqABIvxIQTwbiHiBGKY/IMZwfaAioOAYBUHEMKm6/Y/MhOYYTEVIQJUPXcABMvkMYz0UNSQAAAABJRU5ErkJggg=="
+              alt=""
+              class="icon"
+          /></a>
+        </div>
       </div>
     </section>
     <!--Project Section-->
-    <section id="project-section" class="main-section" >
-      <h1 class="section-title" >Projects</h1>
+    <section id="project-section" class="main-section">
+      <h1 class="section-title">Projects</h1>
       <div class="cards">
         <div class="card"></div>
         <div class="card"></div>
@@ -72,8 +160,7 @@
         <button type="submit" id="button">Send</button>
       </form>
     </section>
-    <footer class="footer" >
-    </footer>
+    <footer class="footer"></footer>
 
     <script>
       // smooth scroll function
