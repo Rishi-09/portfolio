@@ -15,7 +15,6 @@ body{
   background: rgba(0, 0, 0, 0.45);  /* slight transparency */
   backdrop-filter: blur(10px);       /* glass effect */
   z-index: 1000;                     /* always on top */
-  /* display: flex; */
   justify-content: center;
   padding: 15px 30px;
   border-bottom: 2px solid aqua;
@@ -79,6 +78,17 @@ li{
 .nav-buttons:active{
     transform: scale(0.95);
 }
+
+.nav-links{
+  font-size: 1.5em;
+  position: absolute;
+  left: 125px;
+}
+
+.nav-links a{
+  margin: 5px;
+}
+
 
 .content{
     padding: 100px;
@@ -263,8 +273,31 @@ li{
 
 /* Project card */
 .project-card{
-  width: 50vw;
-  height: 25vh;
+  width: 35vw;
+  height: 35vh;
+}
+
+.card-title{
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  z-index: 3;
+}
+
+.curtain{
+  width: 100%;
+  height: 30%;
+  border-radius: 0 0 15px 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+}
+
+.bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 15px;
 }
 /* === Contact Form === */
 .contact-form {
@@ -330,15 +363,15 @@ li{
 .icon{
   width: 30px;
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 35px;
+  right: 15px;
   background-color: #203a43;
-  padding: 10px;
   border-radius: 20px;
   transition: trasnform 0.3s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.5em;
 }
 .icon:hover{
   transform: scale(1.1);
@@ -346,12 +379,22 @@ li{
 
 .skill-icons{
   width: 160px;
+  
 }
 .footer{
   width: 85vw;
   height: 30vh;
   background-color: rgb(25, 24, 24);
   margin-left: 18.21%;
-  
+  color: white;
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.links{
+  font-size: 2em;
+}
+
 
