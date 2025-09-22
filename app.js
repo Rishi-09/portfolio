@@ -27,30 +27,7 @@ app.get("/", (req, res) => {
   res.render("index"); // views/index.ejs
 });
 
-// Contact form
-app.post("/send", (req, res) => {
-  const { name, email, message } = req.body;
 
-  if (!name || !email || !message) {
-    return res.status(400).send("❌ Missing required fields");
-  }
-
-  let mailOptions = {
-    from: email,
-    to: "test@portfolio.com",
-    subject: `Message from ${name}`,
-    text: message,
-  };
-
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.error("❌ Email error:", error);
-      return res.status(500).send("Error sending email");
-    }
-    console.log("✅ Email sent:", info.messageId);
-    res.send("✅ Message sent successfully!");
-  });
-});
 
 app.listen(port, () => {
   console.log(`Server running at http://127.0.0.1:${port}`);
